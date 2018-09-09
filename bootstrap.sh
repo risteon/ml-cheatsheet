@@ -117,7 +117,7 @@ install_template () {
 
   local overwrite_all=false backup_all=false skip_all=false
 
-  link_file "${REPOSITORY_ROOT}/pandoc-latex-template/eisvogel.tex" "${HOME}/.pandoc/templates/eisvogel.tex"
+  link_file "${REPOSITORY_ROOT}/pandoc-latex-template/eisvogel.tex" "${HOME}/.pandoc/templates/eisvogel.latex"
 }
 
 fetch_gitmodules() {
