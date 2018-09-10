@@ -117,6 +117,7 @@ install_template () {
 
   local overwrite_all=false backup_all=false skip_all=false
 
+  mkdir -p ~/.pandoc/templates
   link_file "${REPOSITORY_ROOT}/pandoc-latex-template/eisvogel.tex" "${HOME}/.pandoc/templates/eisvogel.latex"
 }
 
