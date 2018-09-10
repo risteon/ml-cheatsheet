@@ -8,11 +8,11 @@ sheets : $(SHEETS)
 web : $(WEB)
 
 %.md.sheets.pdf : %.md
-	pandoc $^ --from markdown --template eisvogel --listings -o $@ 
+	pandoc $^ --from markdown --template eisvogel --listings -o $@
 
 %.md.sheets.html : %.md
-	pandoc $^ --from markdown --mathjax --listings -o $@ 
+	pandoc $^ --from markdown --standalone --mathjax --listings -o $@
 
-clean : 
+clean :
 	rm -f $(SHEETS)
 	rm -f $(WEB)
